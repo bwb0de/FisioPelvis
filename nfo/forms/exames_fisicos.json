@@ -1,0 +1,443 @@
+{
+	"titulo": "Exame físico",
+	"descricao": "",
+	"form_ref": "exam",
+	"metadata_json": "./nfo/exames_fisicos.json",
+	"nfo_folder": "./nfo/exames_fisicos/",
+	"campos": [{
+					"id" : "identificador_paciente",
+					"visivel" : false,
+					"nome" : "identificador_paciente",
+					"etiqueta" : "Paciente ID",
+					"tipo" : "text",
+					"dica" : "",
+					"ops" : null
+				},
+				{
+					"id" : "identificador_ex_fis",
+					"visivel" : false,
+					"nome" : "identificador_ex_fis",
+					"etiqueta" : "Exame físico ID",
+					"tipo" : "text",
+					"dica" : "",
+					"ops" : null
+				},
+				{
+					"id" : "regiao_abdominal",
+					"visivel" : true,
+					"nome" : "regiao_amdominal",
+					"etiqueta" : "Região abdominal",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"ops" : [
+						"Flacidez",
+						"Diástase",
+						"Hérnias",
+						"Impactação fecal",
+						"Gases",
+						"Álgias",
+						"Hipertonia diafragmática",
+						"Hipotonia",
+						"Cicatrizes",
+						"Aderências"]
+				},
+				{
+					"id" : "regiao_abdominal_obs",
+					"visivel" : true,
+					"nome" : "regiao_abdominal_obs",
+					"etiqueta" : "Região abdominal - outras observações",
+					"tipo" : "textarea",
+					"dica" : "Preencher este campo caso o paciente possua registro de nome social",
+					"ops" : null
+				},
+				{
+					"id" : "pad_resp",
+					"visivel" : true,
+					"nome" : "pad_resp",
+					"etiqueta" : "Padrão respiratório",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"horizontal" : true,
+					"ops" : [
+						"Costo-diafragmático",
+						"Apical",
+						"Abdominal"]
+				},
+				{
+					"id" : "inspecao_ano_vulv_obs",
+					"visivel" : true,
+					"nome" : "inspecao_ano_vulv_obs",
+					"etiqueta" : "Inspeção região ano-vulvar",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"horizontal": true,
+					"ops" : [
+						"Fístulas",
+						"Hemorróida",
+						"Plicoma",
+						"Assaduras",
+						"Sinéquia"]
+				},
+				{
+					"id" : "inspecao_himem",
+					"visivel" : true,
+					"nome" : "inspecao_himem",
+					"etiqueta" : "Inspeção hímem",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s4",
+					"ops" : null
+				},
+				{
+					"id" : "inspecao_labios",
+					"visivel" : true,
+					"nome" : "inspecao_labios",
+					"etiqueta" : "Inspeção grandes e pequenos lábios",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s4",					
+					"ops" : null
+				},
+				{
+					"id" : "inspecao_vulva",
+					"visivel" : true,
+					"nome" : "inspecao_vulva",
+					"etiqueta" : "Inspeção vulva",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s4",					
+					"ops" : null
+				},
+				{
+					"id" : "inspecao_cicatriz",
+					"visivel" : true,
+					"nome" : "inspecao_cicatriz",
+					"etiqueta" : "Cicatrizes",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s4",					
+					"ops" : null
+				},
+				{
+					"id" : "sensibilidade",
+					"visivel" : true,
+					"nome" : "sensibilidade",
+					"etiqueta" : "Sensibilidade",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"horizontal": true,
+					"ops" : [
+						"Normal",
+						"Reduzida",
+						"Exacerbada"]
+				},
+				{
+					"id" : "sensibilidade_regiao",
+					"visivel" : true,
+					"nome" : "sensibilidade_regiao",
+					"etiqueta" : "Sensibilidade: região",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s4",					
+					"ops" :  null
+				},
+				{
+					"id" : "sensibilidade_obs",
+					"visivel" : true,
+					"nome" : "sensibilidade_obs",
+					"etiqueta" : "Sensibilidade: observações",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s8",					
+					"ops" :  null
+				},
+				{
+					"id" : "reflexos_anocut",
+					"visivel" : true,
+					"nome" : "reflexos_anocut",
+					"etiqueta" : "Reflexos: ano-cutâneo",
+					"tipo" : "text",
+					"dica" : "S2-S5 – junção bordo anal e períneo",
+					"tamanho": "s6",
+					"ops" : null
+				},
+				{
+					"id" : "reflexos_bol",
+					"visivel" : true,
+					"nome" : "reflexos_bol",
+					"etiqueta" : "Reflexos: bulbocavernoso",
+					"tipo" : "text",
+					"dica" : "S2-S4 – preensão glande e clitóris",
+					"tamanho": "s6",					
+					"ops" : null
+				},
+				{
+					"id" : "valsalva_c_tend",
+					"visivel" : true,
+					"nome" : "valsalva_c_tend",
+					"etiqueta" : "Centro tendíneo",
+					"tipo" : "radio",
+					"dica" : "",
+					"horizontal": true,
+					"ops" : [
+						"Tônico",
+						"Hipotônico"]
+				},
+				{
+					"id" : "valsalva",
+					"visivel" : true,
+					"nome" : "valsalva",
+					"etiqueta" : "Valsalva/tosse",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"horizontal":true,
+					"ops" : [
+						"Cistocele",
+						"Retrocele",
+						"Histerocele",
+						"Enterocele",
+						"Hipermobilidade uretral",
+						"Fraqueza MAP"]
+				},
+				{
+					"id" : "valsalva_prolap",
+					"visivel" : true,
+					"nome" : "valsalva_prolap",
+					"etiqueta" : "Prolapsos – grau",
+					"tipo" : "text",
+					"dica" : "",
+					"ops" : null
+				},
+				{
+					"id" : "toque",
+					"visivel" : true,
+					"nome" : "toque",
+					"etiqueta" : "Toque",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"horizontal": true,
+					"ops" : [
+						"Dor",
+						"Fibrose",
+						"Urina na vagina",
+						"Globo vesical palpável"]
+				},
+				{
+					"id" : "tonus_rep",
+					"visivel" : true,
+					"nome" : "tonus_rep",
+					"etiqueta" : "Tônus de repouso",
+					"tipo" : "radio",
+					"dica" : "",
+					"horizontal": true,
+					"ops" : [
+						"Satisfatório",
+						"Hipertonia",
+						"Hipotonia"]
+				},
+				{
+					"id" : "stretch_reflexo",
+					"visivel" : true,
+					"nome" : "stretch_reflexo",
+					"etiqueta" : "Stretch reflexo",
+					"tipo" : "radio",
+					"dica" : "",
+					"horizontal": true,
+					"ops" : [
+						"Coordenado",
+						"Incoordenado"]
+				},
+				{
+					"id" : "contracao",
+					"visivel" : true,
+					"nome" : "contracao",
+					"etiqueta" : "Contração",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"horizontal": true,
+					"ops" : [
+						"Inversão de comando",
+						"Uso de musculatura parasita"]
+				},
+				{
+					"id" : "afa_oxford",
+					"visivel" : true,
+					"nome" : "afa_oxford",
+					"etiqueta" : "AFA (Oxford)",
+					"tipo" : "radio",
+					"dica" : "",
+					"ops" : [
+						"0 – Ausência de contração palpável",
+						"1 – Espoço de contração não sustentada",
+						"2 – Contração leve que se sustenta",
+						"3 – Contração moderada-elevação cranial da parede vaginal",
+						"4 – contração satisfatória",
+						"5 – contração forte (sustentada/resistida)"]
+				},
+				{
+					"tipo" : "subt1",
+					"nfo" : "Perfect - escala Ortiz"
+				},
+				{
+					"id" : "afa_oxford_power",
+					"visivel" : true,
+					"nome" : "afa_oxford_power",
+					"etiqueta" : "Power",
+					"tipo" : "radio",
+					"dica" : "",
+					"ops" : [
+						"0 – Sem função perineal objetiva, nem à palpação",
+						"1 – Função perineal objetiva ausente, contração somente à palpação",
+						"2 – Função perineal objetiva débil, contração somente à palpação",
+						"3 – Função perineal objetiva presente, resistencia opositora não mantida mais que 5 seg. à palpação",
+						"4 – Função perineal objetiva presente, resistencia opositora mantida mais que 5 seg. à palpação"]
+				},
+				{
+					"id" : "afa_oxford_endurance",
+					"visivel" : true,
+					"nome" : "afa_oxford_endurance",
+					"etiqueta" : "Endurance",
+					"tipo" : "text",
+					"dica" : "Contração voluntária mantida e sustentada tempo máximo 10 de segundos",
+					"ops" : null
+				},
+				{
+					"id" : "afa_oxford_rep",
+					"visivel" : true,
+					"nome" : "afa_oxford_rep",
+					"etiqueta" : "Repetição",
+					"tipo" : "text",
+					"dica" : "Número de contrações sustentadas satisfatórias de 5 segundos após período de repouso de 4 segundos entre elas. Máx. 10 repetições.",
+					"ops" : null
+				},
+				{
+					"id" : "afa_oxford_fast",
+					"visivel" : true,
+					"nome" : "afa_oxford_fast",
+					"etiqueta" : "Fast",
+					"tipo" : "text",
+					"dica" : "Número de contrações rápidas de 1 segundo sem comprometimento da intensidade. Máx. de 10 repetições, após 2 min. repouso.",
+					"ops" : null
+				},
+				{
+					"id" : "ect",
+					"visivel" : true,
+					"nome" : "ect",
+					"etiqueta" : "ECT",
+					"tipo" : "text",
+					"dica" : "Monitoramento do progresso por meio da cronometragem das contrações",
+					"ops" : null
+				},
+				{
+					"id" : "perda_urinaria",
+					"visivel" : true,
+					"nome" : "perda_urinaria",
+					"etiqueta" : "Perda urinária",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"ops" : [
+						"DD com MAP contraído",
+						"DD sem MAP contraído",
+						"PO com map contraído",
+						"PO sem MAP contraído"]
+				},
+				{
+					"id" : "perda_urinaria_obs",
+					"visivel" : true,
+					"nome" : "perda_urinaria_obs",
+					"etiqueta" : "Características da perda urinária",
+					"tipo" : "text",
+					"dica" : "",
+					"ops" : null
+				},
+				{
+					"id" : "procto",
+					"visivel" : true,
+					"nome" : "procto",
+					"etiqueta" : "Procto",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"ops" : [
+						"Resíduo fecal",
+						"Cicatrizes",
+						"Ampola dilatada",
+						"Dor",
+						"Ânus fechado",
+						"Fistula",
+						"Prolapsa ao esforço",
+						"Estenoses",
+						"Bordo anal hiperemiado",
+						"Boa coordenação",
+						"Incoordenação"]
+				},
+				{
+					"id" : "for_esfincter_ex12",
+					"visivel" : true,
+					"nome" : "for_esfincter_ex12",
+					"etiqueta" : "Esfincter externo 12",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s3",
+					"ops" : null
+				},
+				{
+					"id" : "for_esfincter_ex3",
+					"visivel" : true,
+					"nome" : "for_esfincter_ex3",
+					"etiqueta" : "Esfincter externo 3",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "for_esfincter_ex6",
+					"visivel" : true,
+					"nome" : "for_esfincter_ex6",
+					"etiqueta" : "Esfincter externo 6",
+					"tipo" : "text",
+					"tamanho": "s3",					
+					"dica" : "",
+					"ops" : null
+				},
+				{
+					"id" : "for_esfincter_ex9",
+					"visivel" : true,
+					"nome" : "for_esfincter_ex9",
+					"etiqueta" : "Esfincter externo 9",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "for_puboretal",
+					"visivel" : true,
+					"nome" : "for_puboretal",
+					"etiqueta" : "Segundos de sustentação puboretal",
+					"tipo" : "text",
+					"dica" : "Maior 30 normal",
+					"ops" : null
+				},
+				{
+					"id" : "tonus_repouso_EAI",
+					"visivel" : true,
+					"nome" : "tonus_repouso_EAI",
+					"etiqueta" : "Tônus de repouso do EAE",
+					"tipo" : "radio",
+					"dica" : "",
+					"ops" : [
+						"Hipotônico",
+						"Normotônico",
+						"Hipertônico"]
+				},
+				{
+					"id" : "reflexo_reto_anal",
+					"visivel" : true,
+					"nome" : "reflexo_reto_anal",
+					"etiqueta" : "Reflexo reto anal",
+					"tipo" : "text",
+					"dica" : "Pressão no ânus – contrai esfincter",
+					"ops" : null
+				}]
+}

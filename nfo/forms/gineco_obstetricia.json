@@ -1,0 +1,304 @@
+{
+	"titulo": "Gineco-Obstetrícia e Disfunções Sexuais Femininas",
+	"descricao": "",
+	"form_ref": "gin_ob",
+	"metadata_json": "./nfo/gineco_obstetricia.json",
+	"nfo_folder": "./nfo/gineco_obstetricia/",
+	"campos": [{
+					"id" : "identificador_paciente",
+					"visivel" : false,
+					"nome" : "identificador_paciente",
+					"etiqueta" : "Paciente ID",
+					"tipo" : "text",
+					"dica" : ""
+				},
+				{
+					"id" : "identificador_gin_nfo",
+					"visivel" : false,
+					"nome" : "identificador_gin_nfo",
+					"etiqueta" : "Informação Gineco/Obstetricia ID",
+					"tipo" : "text",
+					"dica" : ""
+				},
+				{
+					"id" : "menstruacao_regular",
+					"visivel" : true,
+					"nome" : "menstruacao_regular",
+					"etiqueta" : "Menstruação regular",
+					"tipo" : "radio",
+					"dica" : "",
+					"tamanho" : "s2",
+					"horizontal" : true,
+					"ops" : [
+						"Sim",
+						"Não"]
+				},
+				{
+					"id" : "menopausa",
+					"visivel" : true,
+					"nome" : "menopausa",
+					"etiqueta" : "Menopausa",
+					"tipo" : "text",
+					"dica" : "Se em menopausa, informar desde quando e se trata",
+					"tamanho": "s4"
+				},
+				{
+					"id" : "vida_sexual",
+					"visivel" : true,
+					"nome" : "vida_sexual",
+					"etiqueta" : "Vida sexual ativa",
+					"tipo" : "radio",
+					"dica" : "",
+					"tamanho" : "s2",
+					"horizontal" : true,
+					"ops" : [
+						"Sim",
+						"Não"]
+				},
+				{
+					"id" : "vida_sexual_obs",
+					"visivel" : true,
+					"nome" : "vida_sexual_obs",
+					"etiqueta" : "Vida sexual observações",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho" : "s4"
+				},
+				{
+					"id" : "metodo_contraceptivo",
+					"visivel" : true,
+					"nome" : "metodo_contraceptivo",
+					"etiqueta" : "Método contraceptivo",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho" : "s4"
+				},
+				{
+					"tipo" : "subt1",
+					"nfo" : "Histórico de gestações e partos"
+				},
+				{
+					"id" : "n_gestacoes",
+					"visivel" : true,
+					"nome" : "n_gestacoes",
+					"etiqueta" : "Total de gestações",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho" : "s2"
+				},
+				{
+					"id" : "n_abortos",
+					"visivel" : true,
+					"nome" : "n_abortos",
+					"etiqueta" : "Nº de abortos",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho" : "s2"
+				},
+				{
+					"id" : "n_partos_naturais",
+					"visivel" : true,
+					"nome" : "n_partos_naturais",
+					"etiqueta" : "Nº partos naturais",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho" : "s2"
+				},
+				{
+					"id" : "n_cesarianas",
+					"visivel" : true,
+					"nome" : "n_cesarianas",
+					"etiqueta" : "Nº de cesarianas",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho" : "s2"
+				},
+				{
+					"id" : "parto_nfo",
+					"visivel" : true,
+					"nome" : "parto_nfo",
+					"etiqueta" : "Intervensões/ocorrências",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"tamanho" :"s4",
+					"horizontal" : true,
+					"ops" : [
+						"Episiotomia",
+						"Laceração",
+						"Fórceps"]
+				},
+				{
+					"id" : "parto_anestesia",
+					"visivel" : true,
+					"nome" : "parto_anestesia",
+					"etiqueta" : "Informações sobre a anestesia",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho" :"s3"
+				},
+				{
+					"id" : "historia_partos",
+					"visivel" : true,
+					"nome" : "historia_partos",
+					"etiqueta" : "Histórico dos partos",
+					"tipo" : "textarea",
+					"dica" : "Apresentar informações relevantes sobre as experiências de parto, inclusive a existencia de complicações.",
+					"tamanho" : "s9"
+				},
+				{
+					"id" : "peso_gestacoes",
+					"visivel" : true,
+					"nome" : "peso_gestacoes",
+					"etiqueta" : "Peso nas gestações",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho" : "s3"
+				},
+				{
+					"id" : "peso_gestacoes_obs",
+					"visivel" : true,
+					"nome" : "peso_gestacoes_obs",
+					"etiqueta" : "Retornou ao peso anterior",
+					"tipo" : "radio",
+					"dica" : "",
+					"tamanho" : "s3",
+					"horizontal" : true,
+					"ops" : [
+						"Sim",
+						"Não"]
+				},
+				{
+					"id" : "peso_bebes",
+					"visivel" : true,
+					"nome" : "peso_bebes",
+					"etiqueta" : "Peso dos bebês",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho" : "s2"
+					
+				},
+				{
+					"tipo" : "subt1",
+					"nfo" : "???"
+				},
+				{
+					"id" : "incontinencia",
+					"visivel" : true,
+					"nome" : "incontinencia",
+					"etiqueta" : "Incontinência",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"tamanho" : "s4",
+					"horizontal" : true,
+					"ops" : [
+						"Pré-gestação",
+						"Durante a gestação",
+						"Pós-parto"]
+				},
+				{
+					"id" : "incontinencia_tratamento",
+					"visivel" : true,
+					"nome" : "incontinencia_tratamento",
+					"etiqueta" : "Tratamentos para incontinência",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s8"
+				},
+				{
+					"id" : "cirurgias_uroginecologicas",
+					"visivel" : true,
+					"nome" : "cirurgias_uroginecologicas",
+					"etiqueta" : "Cirurgias Uroginecológicas",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"tamanho" : "s12",
+					"horizontal" :true,
+					"ops" : [
+						"0 - Sling",
+						"1 - Perineoplastia",
+						"2 - Histerectomia",
+						"3 - Salpingectomia",
+						"4 - Ooferectomia",
+						"5 - Vulvectomia",
+						"6 - Neovagina",
+						"7 - Outras"]
+				},
+				{
+					"id" : "cirurgias_uroginecologicas_obs",
+					"visivel" : true,
+					"nome" : "cirurgias_uroginecologicas_obs",
+					"etiqueta" : "Cirurgias uroginecológicas - observações",
+					"tipo" : "textarea",
+					"dica" : "Se 'Sling', especificar o tipo. Registrar aqui eventuais intercorrências"
+				},
+				{
+					"id" : "patologias_ginecologicas",
+					"visivel" : true,
+					"nome" : "patologias_ginecologicas",
+					"etiqueta" : "Patologias genecológicas associadas",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"tamanho" : "s12",
+					"horizontal" :true,
+					"ops" : [
+						"AIDS",
+						"DSTs",
+						"ITU de Repetição/Frequência",
+						"Candidíase de Repetição/Frequência",
+						"Prolapsos",
+						"HPV"]
+				},
+				{
+					"id" : "patologias_ginecologicas_obs",
+					"visivel" : true,
+					"nome" : "patologias_ginecologicas_obs",
+					"etiqueta" : "Patologias ginecológicas associadas - observações",
+					"tipo" : "textarea",
+					"dica" : "Registrar informações relevantes sobre as patologias ginecológicas"
+				},
+				{
+					"id" : "disfuncoes_sexuais_femininas",
+					"visivel" : true,
+					"nome" : "disfuncoes_sexuais_femininas",
+					"etiqueta" : "Disfunções",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"ops" : [
+						"Dor/ardência na penetração",
+						"Ardência perdura após término da relação",
+						"Não realiza exame ginecológico",
+						"Não usa absorvente interno",
+						"Sudorese, tremores e espasmos musculares",
+						"Dor ou incômodo na região genital ao usar calsa apertada, andar de bicicleta, cavalgar",
+						"Dor ou queimação ao usar sabonete na região genital",
+						"Incômodo ou dor ao secar xixi com papel",
+						"Sintomas pioram no período menstrual",
+						"Prurido",
+						"Fissuras"]
+				},
+				{
+					"id" : "disfuncoes_sexuais_femininas_obs",
+					"visivel" : true,
+					"nome" : "disfuncoes_sexuais_femininas_obs",
+					"etiqueta" : "Disfunções sexuais - observações",
+					"tipo" : "textarea",
+					"dica" : ""
+				},
+				{
+					"id" : "fisiodiagnostico",
+					"visivel" : true,
+					"nome" : "fisiodiagnostico",
+					"etiqueta" : "Físiodiagnóstico",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"tamanho" : "s12",
+					"horizontal" :true,
+					"ops" : [
+						"Dispareunia",
+						"Anorgasmia",
+						"Vagina larga",
+						"Vaginismo",
+						"Vulvodínia",
+						"Clitoroidinia"]
+				}]				
+}

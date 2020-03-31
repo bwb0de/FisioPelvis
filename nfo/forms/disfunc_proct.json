@@ -1,0 +1,157 @@
+{
+	"titulo": "Disfunções Proctológicas",
+	"descricao": "",
+	"form_ref": "d_proct",
+	"metadata_json": "./nfo/disfunc_proct.json",
+	"nfo_folder": "./nfo/disfunc_proct/",
+	"campos": [{
+					"id" : "identificador_paciente",
+					"visivel" : false,
+					"nome" : "identificador_paciente",
+					"etiqueta" : "Paciente ID",
+					"tipo" : "text",
+					"dica" : "",
+					"ops" : null
+				},
+				{
+					"id" : "identificador_disfun_proct",
+					"visivel" : false,
+					"nome" : "identificador_disfun_proct",
+					"etiqueta" : "Informação Disfunções Proctológicas ID",
+					"tipo" : "text",
+					"dica" : "",
+					"ops" : null
+				},
+				{
+					"id" : "disfunc_proct",
+					"visivel" : true,
+					"nome" : "disfunc_proct",
+					"etiqueta" : "Disfunções proctológicas",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"horizontal" : true,
+					"ops" : [
+						"Constipação",
+						"Esvaziamento incompleto",
+						"Esforço ao evacuar",
+						"Hemorróidas"]
+				},
+				{
+					"id" : "inconti_anal",
+					"visivel" : true,
+					"nome" : "inconti_anal",
+					"etiqueta" : "Incontinência anal",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"horizontal" : true,
+					"tamanho" : "s4",
+					"ops" : [
+						"Gases",
+						"Fezes",
+						"Soiling"]
+				},
+				{
+					"id" : "tipo_de_perda",
+					"visivel" : true,
+					"nome" : "tipo_de_perda",
+					"etiqueta" : "Tipo de perda",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"horizontal" : true,					
+					"tamanho" : "s8",
+					"ops" : [
+						"Urgência",
+						"Esforço",
+						"Estresse"]
+				},
+				{
+					"id" : "momento_perda",
+					"visivel" : true,
+					"nome" : "momento_perda",
+					"etiqueta" : "Momento da perda",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho" : "s4",					
+					"ops" : null
+				},
+				{
+					"id" : "freq_evacuatoria",
+					"visivel" : true,
+					"nome" : "freq_evacuatoria",
+					"etiqueta" : "Frequência evacuatória",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho" : "s4",					
+					"ops" : null
+				},
+				{
+					"id" : "reflexos",
+					"visivel" : true,
+					"nome" : "reflexos",
+					"etiqueta" : "Reflexos",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"horizontal" : true,
+					"tamanho" : "s4",					
+					"ops" : [
+						"Gastrocólico",
+						"Ortocólico"]
+				},
+				{
+					"id" : "bristol",
+					"visivel" : true,
+					"nome" : "bristol",
+					"etiqueta" : "Escala de Bristol",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho" : "s4",					
+					"ops" : null
+				},
+				{
+					"id" : "h_evacuacoes",
+					"visivel" : true,
+					"nome" : "h_evacuacoes",
+					"etiqueta" : "Horários das evacuações",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho" : "s4",					
+					"ops" : null
+				},
+				{
+					"id" : "habito_intestinal",
+					"visivel" : true,
+					"nome" : "habito_intestinal",
+					"etiqueta" : "Mudança de hábito intestinal",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho" : "s4",					
+					"ops" : null
+				},
+				{
+					"id" : "alimentacao",
+					"visivel" : true,
+					"nome" : "alimentacao",
+					"etiqueta" : "Alimentação",
+					"tipo" : "text",
+					"dica" : "",
+					"ops" : null
+				},
+				{
+					"id" : "tratamentos_ant",
+					"visivel" : true,
+					"nome" : "tratamentos_ant",
+					"etiqueta" : "Informações sobre tratamentos anteriores",
+					"tipo" : "textarea",
+					"dica" : "",
+					"ops" : null
+				},
+				{
+					"id" : "cirurgias",
+					"visivel" : true,
+					"nome" : "cirurgias",
+					"etiqueta" : "Informações sobre cirurgias",
+					"tipo" : "textarea",
+					"dica" : "",
+					"ops" : null
+				}]				
+}

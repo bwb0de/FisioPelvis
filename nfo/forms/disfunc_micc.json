@@ -1,0 +1,322 @@
+{
+	"titulo": "Disfunções Miccionais",
+	"descricao": "",
+	"form_ref": "d_micc",
+	"metadata_json": "./nfo/disfunc_micc.json",
+	"nfo_folder": "./nfo/disfunc_micc/",
+	"campos": [{
+					"id" : "identificador_paciente",
+					"visivel" : false,
+					"nome" : "identificador_paciente",
+					"etiqueta" : "Paciente ID",
+					"tipo" : "text",
+					"dica" : "",
+					"ops" : null
+				},
+				{
+					"id" : "identificador_disfun_micc",
+					"visivel" : false,
+					"nome" : "identificador_disfun_micc",
+					"etiqueta" : "Informação Disfunções Miccionais ID",
+					"tipo" : "text",
+					"dica" : "",
+					"ops" : null
+				},
+				{
+					"id" : "ingesta_de_liquidos",
+					"visivel" : true,
+					"nome" : "ingesta_de_liquidos",
+					"etiqueta" : "Ingesta de líquidos",
+					"tipo" : "text",
+					"dica" : "",
+					"ops" : null
+				},
+				{
+					"id" : "tipo_bebida",
+					"visivel" : true,
+					"nome" : "tipo_bebida",
+					"etiqueta" : "Tipo de bebida",
+					"tipo" : "text",
+					"dica" : "",
+					"ops" : null
+				},
+				{
+					"id" : "controle_urina",
+					"visivel" : true,
+					"nome" : "controle_urina",
+					"etiqueta" : "Com que idade adquiriu controle urina",
+					"tipo" : "number",
+					"dica" : "",
+					"ops" : null
+				},
+				{
+					"id" : "enurese",
+					"visivel" : true,
+					"nome" : "enurese",
+					"etiqueta" : "Enurese na infância",
+					"tipo" : "radio",
+					"dica" : "",
+					"ops" : [
+						"Sim",
+						"Não"]
+				},
+				{
+					"id" : "enurese_idade",
+					"visivel" : true,
+					"nome" : "enurese_idade",
+					"etiqueta" : "Idade",
+					"tipo" : "number",
+					"dica" : "Indicar a idade caso a resposta anterior tenha sido afirmativa",
+					"ops" : null
+				},
+				{
+					"id" : "frq_urinaria_diurna",
+					"visivel" : true,
+					"nome" : "frq_urinaria_diurna",
+					"etiqueta" : "Frequência urinária diurna",
+					"tipo" : "text",
+					"dica" : "Informar o número e se é preventiva",
+					"ops" : null
+				},
+				{
+					"id" : "frq_urinaria_noturna",
+					"visivel" : true,
+					"nome" : "frq_urinaria_noturna",
+					"etiqueta" : "Frequência urinária noturna",
+					"tipo" : "text",
+					"dica" : "Informar o número e se é necessária",
+					"ops" : null
+				},
+				{
+					"id" : "frq_urinaria_sono",
+					"visivel" : true,
+					"nome" : "frq_urinaria_sono",
+					"etiqueta" : "A necessidade de urinar à noite interfere no sono",
+					"tipo" : "radio",
+					"dica" : "",
+					"ops" : [
+						"Sim",
+						"Não"]
+				},
+				{
+					"id" : "disfunc_micc_sintomas",
+					"visivel" : true,
+					"nome" : "disfunc_micc_sintomas",
+					"etiqueta" : "Sintomas",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"ops" : [
+						"Disúria",
+						"Dor vesical suprapública",
+						"Gotejamento pós-miccional",
+						"Hesitação para urinar",
+						"Esforço para urinar",
+						"Esvasiamento incompleto"]
+				},
+				{
+					"id" : "caracteristicas_urina",
+					"visivel" : true,
+					"nome" : "caracteristicas_urina",
+					"etiqueta" : "Características da urina",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"ops" : [
+						"Clara",
+						"Escura",
+						"Hematúria macroscópica",
+						"Sem cheiro",
+						"Odor forte"]
+				},
+				{
+					"id" : "caracteristicas_jato_urina",
+					"visivel" : true,
+					"nome" : "caracteristicas_jato_urina",
+					"etiqueta" : "Características do jato da urina",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"ops" : [
+						"Fraco",
+						"Forte",
+						"Intermitente",
+						"Bifurcado"]
+				},
+				{
+					"id" : "stop_teste",
+					"visivel" : true,
+					"nome" : "stop_teste",
+					"etiqueta" : "'Stop' teste",
+					"tipo" : "radio",
+					"dica" : "",
+					"ops" : [
+						"Não consegue interromper o jato",
+						"Interrompe parcialmente o jato por pouco tempo",
+						"Interrompe totalmente o jato, mas por pouco tempo",
+						"Interrompe totalmente a miccção"]
+				},
+				{
+					"id" : "caracteristicas_perda",
+					"visivel" : true,
+					"nome" : "caracteristicas_perda",
+					"etiqueta" : "Características da perda",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"ops" : [
+						"Gotas",
+						"Jato",
+						"Contínua",
+						"Insensível",
+						"Pós-miccional"]
+				},
+				{
+					"id" : "situacoes_perda",
+					"visivel" : true,
+					"nome" : "situacoes_perda",
+					"etiqueta" : "Situações de perda",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"ops" : [
+						"Espirrar",
+						"Tossir",
+						"Pular",
+						"Dançar",
+						"Rir",
+						"Caminhar",
+						"Ao fazer atividade física",
+						"Durante a relação sexual",
+						"Após a relação sexual",
+						"Ao sentar/levantar",
+						"Enurese noturna",
+						"Urgência",
+						"Frio",
+						"Barulho de água",
+						"Mãos na água"
+					]
+				},
+				{
+					"id" : "n_protetores_dia",
+					"visivel" : true,
+					"nome" : "n_protetores_dia",
+					"etiqueta" : "Número de protetores usados durante o dia",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"ops" : null
+				},
+				{
+					"id" : "n_protetores_noite",
+					"visivel" : true,
+					"nome" : "n_protetores_noite",
+					"etiqueta" : "Número de protetores usados urante o noite",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"ops" : null
+				},
+				{
+					"id" : "protetores_carc_uso",
+					"visivel" : true,
+					"nome" : "protetores_carc_uso",
+					"etiqueta" : "Uso dos protetores",
+					"tipo" : "radio",
+					"dica" : "",
+					"ops" : [
+						"Permanente",
+						"Ocasional"]
+				},
+				{
+					"id" : "protetores_tipo",
+					"visivel" : true,
+					"nome" : "protetores_tipo",
+					"etiqueta" : "Tipo de protetor usado",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"ops" : [
+						"Protetor de calcinha",
+						"Absorvente",
+						"Fralda",
+						"Outros"]
+				},
+				{
+					"id" : "perda_tempo",
+					"visivel" : true,
+					"nome" : "perda_tempo",
+					"etiqueta" : "A quanto tempo apresenta perda urinária",
+					"tipo" : "radio-text",
+					"dica" : "Apenas número",
+					"ops" : [
+						"Dias",
+						"Semanas",
+						"Mesês",
+						"Anos"]
+				},
+				{
+					"id" : "perda_inicio",
+					"visivel" : true,
+					"nome" : "perda_inicio",
+					"etiqueta" : "Como começou a perda urinária",
+					"tipo" : "text",
+					"dica" : "",
+					"ops" : null
+				},
+				{
+					"id" : "perda_evolucao",
+					"visivel" : true,
+					"nome" : "perda_evolucao",
+					"etiqueta" : "Características de evolução da perda urinária",
+					"tipo" : "radio",
+					"dica" : "",
+					"ops" : [
+						"Vem se agravando",
+						"Perde com menos esforços",
+						"Evoluiu para urgência"]
+				},
+				{
+					"id" : "tecnica_cirurgica",
+					"visivel" : true,
+					"nome" : "tecnica_cirurgica",
+					"etiqueta" : "Técnica cirurgica",
+					"tipo" : "text",
+					"dica" : "",
+					"ops" : null
+				},
+				{
+					"id" : "tempo_de_sonda",
+					"visivel" : true,
+					"nome" : "tempo_de_sonda",
+					"etiqueta" : "Tempo de sonda",
+					"tipo" : "radio-text",
+					"dica" : "Apenas número",
+					"ops" : [
+						"Dias",
+						"Semanas",
+						"Meses"]
+				},
+				{
+					"id" : "perda_outras_nfo",
+					"visivel" : true,
+					"nome" : "perda_outras_nfo",
+					"etiqueta" : "Outras informações sobre a perda urinária",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"ops" : [
+						"Vazava urina em volta da sonda",
+						"Perdia antes da cirurgia",
+						"Luts antes"]
+				},
+				{
+					"id" : "radioterapia",
+					"visivel" : true,
+					"nome" : "radioterapia",
+					"etiqueta" : "Radioterapia",
+					"tipo" : "text",
+					"dica" : "",
+					"ops" : null
+				},
+				{
+					"id" : "disfunc_sexual_masc",
+					"visivel" : true,
+					"nome" : "disfunc_sexual_masc",
+					"etiqueta" : "Disfunção sexual",
+					"tipo" : "textarea",
+					"dica" : "",
+					"ops" : null
+				}]				
+}

@@ -1,0 +1,28 @@
+<header>
+  <div class="header_title_box">
+    <p class="title"><a href="/"><img src="/img/home2.svg" height="42" width="42"></a>Pacientes registrados</ht>
+  </div>
+  <div class="header_action_box">
+				<a href="/form/novo_paciente/n_pac">Novo paciente...</a> |
+				<a href="/view/listar/pacientes">Listar pacientes...</a> |
+				<a href="/form_pend">Listar pendências...</a> |
+				<a href="/view/sobre/nfo">Sobre... </a>
+  </div>
+</header>
+
+<div class="page_nfo">
+  <table class="w3-table w3-hoverable w3-bordered">
+       <tr>
+            <td style="width: 33.5%;"><b>Paciente</b></td>
+            <td style="width: 33.5%;"><b>e-Mail</b></td>
+            <td><b>Telefone</b></td>
+      </tr>
+  {{#each pacientes}}
+        <tr>
+            <td><a href="/view/paciente/{{this.identificador}}"><img src="/img/ver.svg" height="22" width="22">{{this.dados.nome}}</a></td>
+            <td>{{this.dados.email}}</td>
+            <td>{{this.dados.telefone}}</td>
+        </tr>
+  {{/each}}
+  </table>
+</div> 

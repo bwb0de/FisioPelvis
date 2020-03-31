@@ -1,0 +1,713 @@
+{
+	"titulo": "Exames complementares",
+	"descricao": "",
+	"form_ref": "exam_c",
+	"metadata_json": "./nfo/exames_complementares.json",
+	"nfo_folder": "./nfo/exames_complementares/",
+	"campos": [{
+					"id" : "identificador_paciente",
+					"visivel" : false,
+					"nome" : "identificador_paciente",
+					"etiqueta" : "Paciente ID",
+					"tipo" : "text",
+					"dica" : "",
+					"ops" : null
+				},
+				{
+					"id" : "identificador_exam_c",
+					"visivel" : false,
+					"nome" : "identificadoridentificador_exam_c",
+					"etiqueta" : "Exames complementares ID",
+					"tipo" : "text",
+					"dica" : "",
+					"ops" : null
+				},
+				{
+					"id" : "psa_data",
+					"visivel" : true,
+					"nome" : "psa_data",
+					"etiqueta" : "PSA - Data",
+					"tipo" : "text",
+					"tamanho": "s3",
+					"dica" : "dd/mm/aaaa",
+					"ops" : null
+				},
+				{
+					"id" : "psa_total",
+					"visivel" : true,
+					"nome" : "psa_total",
+					"etiqueta" : "PSA - Total",
+					"tipo" : "text",
+					"tamanho": "s3",					
+					"dica" : "",
+					"ops" : null
+				},
+				{
+					"id" : "psa_livre",
+					"visivel" : true,
+					"nome" : "psa_livre",
+					"etiqueta" : "PSA - Livre",
+					"tipo" : "text",
+					"tamanho": "s3",					
+					"dica" : "",
+					"ops" : null
+				},
+				{
+					"id" : "peso_prostata",
+					"visivel" : true,
+					"nome" : "peso_prostata",
+					"etiqueta" : "Peso próstata",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "biopsia",
+					"visivel" : true,
+					"nome" : "biopsia",
+					"etiqueta" : "Biópsia",
+					"tipo" : "text",
+					"dica" : "",
+					"ops" : null
+				},
+				{
+					"id" : "colpocitologia_data",
+					"visivel" : true,
+					"nome" : "colpocitologia_data",
+					"etiqueta" : "Colpocitologia - data",
+					"tipo" : "text",
+					"dica" : "dd/mm/aaaa",
+					"tamanho": "s2",					
+					"ops" : null
+				},
+				{
+					"id" : "colpocitologia",
+					"visivel" : true,
+					"nome" : "colpocitologia",
+					"etiqueta" : "Colpocitologia - notas",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s4",					
+					"ops" : null
+				},
+				{
+					"id" : "urinocultura_data",
+					"visivel" : true,
+					"nome" : "urinocultura_data",
+					"etiqueta" : "Urinocultura - data",
+					"tipo" : "text",
+					"dica" : "dd/mm/aaaa",
+					"tamanho": "s2",					
+					"ops" : null
+				},
+				{
+					"id" : "urinocultura",
+					"visivel" : true,
+					"nome" : "urinocultura",
+					"etiqueta" : "Urinocultura - notas",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s4",					
+					"ops" : null
+				},
+				{
+					"id" : "urodinamica_data",
+					"visivel" : true,
+					"nome" : "urodinamica_data",
+					"etiqueta" : "Urodinâmica - data",
+					"tipo" : "text",
+					"dica" : "dd/mm/aaaa",
+					"tamanho": "s2",					
+					"ops" : null
+				},
+				{
+					"id" : "urodinamica_curv_flux",
+					"visivel" : true,
+					"nome" : "urodinamica_curv_flux",
+					"etiqueta" : "Curva de fluxo",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s5",					
+					"ops" :  null
+				},
+				{
+					"id" : "urodinamica_ccm",
+					"visivel" : true,
+					"nome" : "urodinamica_ccm",
+					"etiqueta" : "CCM",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s5",					
+					"ops" :  null
+				},
+				{
+					"id" : "urodinamica_complacencia",
+					"visivel" : true,
+					"nome" : "urodinamica_complacencia",
+					"etiqueta" : "Complacência",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s4",					
+					"ops" :  null
+				},
+				{
+					"id" : "urodinamica_sensibilidade",
+					"visivel" : true,
+					"nome" : "urodinamica_sensibilidade",
+					"etiqueta" : "Sensibilidade",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s4",					
+					"ops" :  null
+				},
+				{
+					"id" : "urodinamica_estabilidade",
+					"visivel" : true,
+					"nome" : "urodinamica_estabilidade",
+					"etiqueta" : "Estabilidade",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s4",					
+					"ops" :  null
+				},
+				{
+					"id" : "urodinamica_mom_perda",
+					"visivel" : true,
+					"nome" : "urodinamica_mom_perda",
+					"etiqueta" : "Momento da perda",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s4",					
+					"ops" :  null
+				},
+				{
+					"id" : "urodinamica_mom_perda_f",
+					"visivel" : true,
+					"nome" : "urodinamica_mom_perda_f",
+					"etiqueta" : "Momento da perda - fase",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s4",					
+					"ops" :  null
+				},
+				{
+					"id" : "urodinamica_mom_perda_m",
+					"visivel" : true,
+					"nome" : "urodinamica_mom_perda_m",
+					"etiqueta" : "Momento da perda - motivo",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s4",					
+					"ops" :  null
+				},
+				{
+					"id" : "urodinamica_press_p",
+					"visivel" : true,
+					"nome" : "urodinamica_press_p",
+					"etiqueta" : "Pressão de perda",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s4",					
+					"ops" :  null
+				},
+				{
+					"id" : "urodinamica_res_pm",
+					"visivel" : true,
+					"nome" : "urodinamica_res_pm",
+					"etiqueta" : "Resíduo pós-miccional",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s4",					
+					"ops" :  null
+				},
+				{
+					"id" : "urodinamica_elet_reflex",
+					"visivel" : true,
+					"nome" : "urodinamica_elet_reflex",
+					"etiqueta" : "Eletromiografia - reflexo guardião",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s4",					
+					"ops" :  null
+				},
+				{
+					"id" : "urodinamica_sinerg_esv",
+					"visivel" : true,
+					"nome" : "urodinamica_sinerg_esv",
+					"etiqueta" : "Eletromiografia - sinergia esvaziamento",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s4",					
+					"ops" :  null
+				},
+				{
+					"id" : "urodinamica_conclusao",
+					"visivel" : true,
+					"nome" : "urodinamica_conclusao",
+					"etiqueta" : "Urodinâmica - conclusão",
+					"tipo" : "textarea",
+					"dica" : "",
+					"tamanho": "s8",					
+					"ops" : null
+				},
+				{
+					"tipo" : "subt1",
+					"nfo" : "Diário miccional"
+				},
+				{
+					"tipo" : "subt2",
+					"nfo" : "1º Dia"
+				},
+				{
+					"id" : "diario_mic1_data",
+					"visivel" : true,
+					"nome" : "diario_mic1_data",
+					"etiqueta" : "Reflexos: bulbocavernoso",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s3",
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic1_fd",
+					"visivel" : true,
+					"nome" : "diario_mic1_fd",
+					"etiqueta" : "FD",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic1_fn",
+					"visivel" : true,
+					"nome" : "diario_mic1_fn",
+					"etiqueta" : "FN",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic1_ingest_hid",
+					"visivel" : true,
+					"nome" : "diario_mic1_ingest_hid",
+					"etiqueta" : "Ingesta hídrica em 24 horas (ml)",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic1_elimin",
+					"visivel" : true,
+					"nome" : "diario_mic1_elimin",
+					"etiqueta" : "Eliminações em 24 horas (ml)",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic1_menor",
+					"visivel" : true,
+					"nome" : "diario_mic1_menor",
+					"etiqueta" : "Menor volume urinado em 24h (ml)",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic1_maior",
+					"visivel" : true,
+					"nome" : "diario_mic1_maior",
+					"etiqueta" : "Maior volume urinado em 24h (ml)",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic1_urgencia",
+					"visivel" : true,
+					"nome" : "diario_mic1_urgencia",
+					"etiqueta" : "Grau de urgência",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic1_s_perda",
+					"visivel" : true,
+					"nome" : "diario_mic1_s_perda",
+					"etiqueta" : "Situações de perda",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic1_t_protetores",
+					"visivel" : true,
+					"nome" : "diario_mic1_t_protetores",
+					"etiqueta" : "Tipo de protetores",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s6",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic1_n_protetores",
+					"visivel" : true,
+					"nome" : "diario_mic1_n_protetores",
+					"etiqueta" : "Número de protetores em 24hs",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic1_uri_vont",
+					"visivel" : true,
+					"nome" : "diario_mic1_uri_vont",
+					"etiqueta" : "Urinou com vontade todas as vezes",
+					"tipo" : "radio",
+					"dica" : "",
+					"horizontal" : true,
+					"tamanho": "s4",					
+					"ops" : [
+						"Sim",
+						"Não"]
+				},
+				{
+					"id" : "diario_mic1_rpm",
+					"visivel" : true,
+					"nome" : "diario_mic1_rpm",
+					"etiqueta" : "RPM",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s8",					
+					"ops" : null
+				},
+				{
+					"tipo" : "subt2",
+					"nfo" : "2º Dia"
+				},
+				{
+					"id" : "diario_mic2_data",
+					"visivel" : true,
+					"nome" : "diario_mic2_data",
+					"etiqueta" : "Reflexos: bulbocavernoso",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic2_fd",
+					"visivel" : true,
+					"nome" : "diario_mic2_fd",
+					"etiqueta" : "FD",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic2_fn",
+					"visivel" : true,
+					"nome" : "diario_mic2_fn",
+					"etiqueta" : "FN",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic2_ingest_hid",
+					"visivel" : true,
+					"nome" : "diario_mic2_ingest_hid",
+					"etiqueta" : "Ingesta hídrica em 24 horas (ml)",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic2_elimin",
+					"visivel" : true,
+					"nome" : "diario_mic2_elimin",
+					"etiqueta" : "Eliminações em 24 horas (ml)",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic2_menor",
+					"visivel" : true,
+					"nome" : "diario_mic2_menor",
+					"etiqueta" : "Menor volume urinado em 24h (ml)",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic2_maior",
+					"visivel" : true,
+					"nome" : "diario_mic2_maior",
+					"etiqueta" : "Maior volume urinado em 24h (ml)",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic2_urgencia",
+					"visivel" : true,
+					"nome" : "diario_mic2_urgencia",
+					"etiqueta" : "Grau de urgência",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic2_s_perda",
+					"visivel" : true,
+					"nome" : "diario_mic2_s_perda",
+					"etiqueta" : "Situações de perda",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic2_t_protetores",
+					"visivel" : true,
+					"nome" : "diario_mic2_t_protetores",
+					"etiqueta" : "Tipo de protetores",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s6",
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic2_n_protetores",
+					"visivel" : true,
+					"nome" : "diario_mic2_n_protetores",
+					"etiqueta" : "Número de protetores em 24hs",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho": "s3",
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic2_uri_vont",
+					"visivel" : true,
+					"nome" : "diario_mic2_uri_vont",
+					"etiqueta" : "Urinou com vontade todas as vezes",
+					"tipo" : "radio",
+					"dica" : "",
+					"horizontal" :true,
+					"tamanho": "s4",					
+					"ops" : [
+						"Sim",
+						"Não"]
+				},
+				{
+					"id" : "diario_mic2_rpm",
+					"visivel" : true,
+					"nome" : "diario_mic2_rpm",
+					"etiqueta" : "RPM",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s8",					
+					"ops" : null
+				},
+				{
+					"tipo" : "subt2",
+					"nfo" : "3º Dia"
+				},
+				{
+					"id" : "diario_mic3_data",
+					"visivel" : true,
+					"nome" : "diario_mic3_data",
+					"etiqueta" : "Reflexos: bulbocavernoso",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic3_fd",
+					"visivel" : true,
+					"nome" : "diario_mic3_fd",
+					"etiqueta" : "FD",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic3_fn",
+					"visivel" : true,
+					"nome" : "diario_mic3_fn",
+					"etiqueta" : "FN",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic3_ingest_hid",
+					"visivel" : true,
+					"nome" : "diario_mic3_ingest_hid",
+					"etiqueta" : "Ingesta hídrica em 24 horas (ml)",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic3_elimin",
+					"visivel" : true,
+					"nome" : "diario_mic3_elimin",
+					"etiqueta" : "Eliminações em 24 horas (ml)",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic3_menor",
+					"visivel" : true,
+					"nome" : "diario_mic3_menor",
+					"etiqueta" : "Menor volume urinado em 24h (ml)",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic3_maior",
+					"visivel" : true,
+					"nome" : "diario_mic3_maior",
+					"etiqueta" : "Maior volume urinado em 24h (ml)",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic3_urgencia",
+					"visivel" : true,
+					"nome" : "diario_mic3_urgencia",
+					"etiqueta" : "Grau de urgência",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic3_s_perda",
+					"visivel" : true,
+					"nome" : "diario_mic3_s_perda",
+					"etiqueta" : "Situações de perda",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic3_t_protetores",
+					"visivel" : true,
+					"nome" : "diario_mic3_t_protetores",
+					"etiqueta" : "Tipo de protetores",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s6",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic3_n_protetores",
+					"visivel" : true,
+					"nome" : "diario_mic3_n_protetores",
+					"etiqueta" : "Número de protetores em 24hs",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho": "s3",					
+					"ops" : null
+				},
+				{
+					"id" : "diario_mic3_uri_vont",
+					"visivel" : true,
+					"nome" : "diario_mic3_uri_vont",
+					"etiqueta" : "Urinou com vontade todas as vezes",
+					"tipo" : "radio",
+					"dica" : "",
+					"horizontal" :true,					
+					"tamanho": "s4",					
+					"ops" : [
+						"Sim",
+						"Não"]
+				},
+				{
+					"id" : "diario_mic3_rpm",
+					"visivel" : true,
+					"nome" : "diario_mic3_rpm",
+					"etiqueta" : "RPM",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s8",					
+					"ops" : null
+				},
+				{
+					"tipo" : "subt1",
+					"nfo" : "Informações complementares"
+				},
+				{
+					"id" : "info_complement",
+					"visivel" : true,
+					"nome" : "info_complement",
+					"etiqueta" : "Observações",
+					"tipo" : "textarea",
+					"ops" : null
+				},
+				{
+					"id" : "handcap",
+					"visivel" : true,
+					"nome" : "handcap",
+					"etiqueta" : "Handcap",
+					"tipo" : "radio",
+					"dica" : "",
+					"horizontal" : true,
+					"ops" : [
+						"0","1","2","3","4","5","6","7","8","9","10"
+					]
+				},
+				{
+					"id" : "dcaf",
+					"visivel" : true,
+					"nome" : "dcaf",
+					"etiqueta" : "DCAF",
+					"tipo" : "textarea",
+					"dica" : "",
+					"tamanho" : "s4",
+					"ops" : null
+				},
+				{
+					"id" : "proposta",
+					"visivel" : true,
+					"nome" : "proposta",
+					"etiqueta" : "Proposta terapêutica",
+					"tipo" : "textarea",
+					"dica" : "",
+					"tamanho": "s8",
+					"ops" : null
+				}]
+}

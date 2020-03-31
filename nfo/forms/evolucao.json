@@ -1,0 +1,35 @@
+{
+	"titulo": "Evolução",
+	"descricao": "",
+	"form_ref": "evo",
+	"metadata_json": "./nfo/exames_fisicos.json",
+	"nfo_folder": "./nfo/exames_fisicos/",
+	"campos": [
+				{
+					"id" : "identificador_paciente",
+					"visivel" : false,
+					"nome" : "identificador_paciente",
+					"etiqueta" : "Paciente ID",
+					"tipo" : "text",
+					"dica" : "",
+					"ops" : null
+				},
+				{
+					"id" : "identificador_evolucao",
+					"visivel" : false,
+					"nome" : "identificador_evolucao",
+					"etiqueta" : "Evolução ID",
+					"tipo" : "text",
+					"dica" : "",
+					"ops" : null
+				},
+				{
+					"id" : "evolucao_nfo",
+					"visivel" : true,
+					"nome" : "evolucao_nfo",
+					"etiqueta" : "Detalhamento",
+					"tipo" : "textarea",
+					"dica" : "",
+					"ops" : null
+				}]
+}

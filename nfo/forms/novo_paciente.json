@@ -1,0 +1,262 @@
+{
+	"titulo": "Registro de novo paciente",
+	"descricao": "Esta é a primeira página de uma sequência de formulários, o registro do paciente só será efetivado quando todos os formulários sequenciais forem respondidos. A quantidade de formularios será ajustada conforme as respostas apresentadas no campo 'Especialidades'.",
+	"form_ref": "n_pac",
+	"metadata_json": "./nfo/pacientes.json",
+	"nfo_folder": "./nfo/pacientes/",
+	"campos": [
+				{
+					"tipo" : "subt1",
+					"nfo" : "Dados pessoais"
+				},
+				{
+					"id" : "identificador",
+					"visivel" : false,
+					"nome" : "identificador",
+					"etiqueta" : "Paciente ID",
+					"tipo" : "text",
+					"dica" : ""
+				},
+				{
+					"id" : "nome",
+					"visivel" : true,
+					"nome" : "nome",
+					"etiqueta" : "Nome",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s6"
+				},
+				{
+					"id" : "nome_social",
+					"visivel" : true,
+					"nome" : "nome_social",
+					"etiqueta" : "Nome social",
+					"tipo" : "text",
+					"dica" : "Preencher este campo caso o paciente possua registro de nome social",
+					"tamanho": "s6"
+				},
+				{
+					"id" : "sexo",
+					"visivel" : true,
+					"nome" : "genero",
+					"etiqueta" : "Sexo",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s2"
+				},
+				{
+					"id" : "cor",
+					"visivel" : true,
+					"nome" : "cor",
+					"etiqueta" : "Cor/Etinia",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s3"
+				},
+				{
+					"id" : "dn",
+					"visivel" : true,
+					"nome" : "dn",
+					"etiqueta" : "Data de nascimento",
+					"tipo" : "date",
+					"dica" : "",
+					"tamanho": "s2"
+				},
+				{
+					"id" : "idade",
+					"visivel" : true,
+					"nome" : "idade",
+					"etiqueta" : "Idade",
+					"tipo" : "number",
+					"dica" : "",
+					"tamanho": "s1"
+				},
+				{
+					"id" : "peso",
+					"visivel" : true,
+					"nome" : "peso",
+					"etiqueta" : "Peso (Kg)",
+					"tipo" : "number",
+					"dica" : "Apenas numero",
+					"tamanho": "s2",
+					"form_col_pos": 1
+				},
+				{
+					"id" : "altura",
+					"visivel" : true,
+					"nome" : "altura",
+					"etiqueta" : "Altura (cm)",
+					"tipo" : "number",
+					"dica" : "Apenas número",
+					"tamanho": "s2"
+				},
+				{
+					"id" : "estado_civil",
+					"visivel" : true,
+					"nome" : "estado_civil",
+					"etiqueta" : "Estado civil",
+					"tipo" : "radio",
+					"dica" : "",
+					"tamanho": "s6",
+					"horizontal": true,
+					"ops" :  [
+						"Solteiro/a  ",
+						"Casado/a  ",
+						"Divorciado/a  ",
+						"Viúvo/a"]
+				},
+				{
+					"id" : "responsavel",
+					"visivel" : true,
+					"nome" : "responsavel",
+					"etiqueta" : "Nome do responsável",
+					"tipo" : "text",
+					"dica" : "Se paciente for menor de 18 anos.",
+					"tamanho": "s3"
+				},
+				{
+					"id" : "profissao",
+					"visivel" : true,
+					"nome" : "profissao",
+					"etiqueta" : "Profissão",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s3"
+				},				
+				{
+					"tipo" : "subt1",
+					"nfo" : "Meios de contacto"
+				},
+				{
+					"id" : "endereco",
+					"visivel" : true,
+					"nome" : "endereco",
+					"etiqueta" : "Endereço de residência",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s4"
+				},
+				{
+					"id" : "email",
+					"visivel" : true,
+					"nome" : "email",
+					"etiqueta" : "Endereço eletrônico (e-mail)",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s4"
+				},
+				{
+					"id" : "telefone",
+					"visivel" : true,
+					"nome" : "telefone",
+					"etiqueta" : "Telefone",
+					"tipo" : "text",
+					"dica" : "Colocar \"W\" ao final do número se possuir whatsapp",
+					"tamanho": "s4"
+				},
+				{
+					"tipo" : "subt1",
+					"nfo" : "Informações médicas preliminares"
+				},
+				{
+					"id" : "indicacao",
+					"visivel" : true,
+					"nome" : "indicacao",
+					"etiqueta" : "Indicação",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s4"
+				},
+				{
+					"id" : "medico",
+					"visivel" : true,
+					"nome" : "medico",
+					"etiqueta" : "Nome do médico",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s4"
+				},
+				{
+					"id" : "diagnostico",
+					"visivel" : true,
+					"nome" : "diagnostico",
+					"etiqueta" : "Diagnóstico clínico",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho": "s4"	
+				},
+				{
+					"id" : "qp",
+					"visivel" : true,
+					"nome" : "qp",
+					"etiqueta" : "Q.P.",
+					"tipo" : "text",
+					"dica" : ""
+				},
+				{
+					"id" : "hda_hpp",
+					"visivel" : true,
+					"nome" : "hda_hpp",
+					"etiqueta" : "H.D.A./H.P.P.",
+					"tipo" : "textarea",
+					"dica" : ""
+				},
+				{
+					"id" : "mobilidade",
+					"visivel" : true,
+					"nome" : "mobilidade",
+					"etiqueta" : "Mobilidade",
+					"tipo" : "text",
+					"dica" : "Destreza, roupa, acessórios",
+					"tamanho" : "s3"
+				},
+				{
+					"id" : "acp_multidis",
+					"visivel" : true,
+					"nome" : "acp_multidis",
+					"etiqueta" : "Acompanhamento multidisciplinar",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho" : "s3"
+				},
+				{
+					"id" : "medicamentos",
+					"visivel" : true,
+					"nome" : "medicamentos",
+					"etiqueta" : "Medicamentos e horários",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho" : "s3"
+				},
+				{
+					"id" : "tratamentos",
+					"visivel" : true,
+					"nome" : "tratamentos",
+					"etiqueta" : "Tratamentos anteriores",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho" : "s3"
+				},
+				{
+					"id" : "atividade_fisica",
+					"visivel" : true,
+					"nome" : "atividade_fisica",
+					"etiqueta" : "Atividade física? Tipo e frequencia",
+					"tipo" : "text",
+					"dica" : "",
+					"tamanho" : "s6"
+				},
+				{
+					"id" : "especialidades",
+					"visivel" : true,
+					"nome" : "especialidades",
+					"etiqueta" : "Especialidades",
+					"tipo" : "checkbox",
+					"dica" : "",
+					"tamanho" : "s6",
+					"ops" : [
+						"Gineco-Obstetrícia e Disfunções Sexuais Femininas",
+						"Disfunções Miccionais",
+						"Disfunções proctológicas"]
+				}]
+}

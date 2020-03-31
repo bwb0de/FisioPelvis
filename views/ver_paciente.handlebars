@@ -1,0 +1,1224 @@
+<header>
+	<div class="header_title_box">
+    <p class="title"><a href="/"><img src="/img/home2.svg" height="42" width="42"></a>{{paciente_info_geral.dados.nome}}</ht>
+  </div>
+  <div class="header_action_box">
+        
+  </div>
+</header>
+
+<div class="page_nfo">
+  <div class="w3-row-padding">
+
+<div class="sub_header">
+<b>Formulários</b>: <a href="/form/gineco_obstetricia/{{paciente_info_geral.identificador}}">Gineco obstetricia...</a> |		    
+				<a href="/form/disfunc_micc/{{paciente_info_geral.identificador}}">Disfunções miccionais...</a> |
+				<a href="/form/disfunc_proct/{{paciente_info_geral.identificador}}">Disfunções proctológicas...</a> |
+				<a href="/form/exames_complementares/{{paciente_info_geral.identificador}}">Exames complementares...</a> |
+        <a href="/form/exames_fisicos/{{paciente_info_geral.identificador}}">Exames físicos...</a> |
+        <a href="/form/evolucao/{{paciente_info_geral.identificador}}">Registrar evoluções... </a>
+</div>
+
+<br><br>
+
+<h2>Informações gerais</h2>
+ <table>
+ {{#if paciente_info_geral.dados.nome_social}}
+ <tr>
+   <td style="text-align: right; font-weight: bold;width: 370px;">Nome social:</td>
+   <td>{{paciente_info_geral.dados.nome_social}}</td>
+ </tr>
+ {{/if}}
+ {{#if paciente_info_geral.dados.cor}}
+ <tr>
+   <td style="text-align: right; font-weight: bold;width: 370px;">Cor:</td>
+   <td>{{paciente_info_geral.dados.cor}}</td>
+ </tr>
+ {{/if}}
+ {{#if paciente_info_geral.dados.dn}}
+ <tr>
+   <td style="text-align: right; font-weight: bold;width: 370px;">Data de nascimento:</td>
+   <td>{{paciente_info_geral.dados.dn}}</td>
+ </tr>
+ {{/if}}
+ {{#if paciente_info_geral.dados.idade}}
+ <tr>
+   <td style="text-align: right; font-weight: bold;width: 370px;">Idade:</td>
+   <td>{{paciente_info_geral.dados.idade}}</td>
+ </tr>
+ {{/if}}
+ {{#if paciente_info_geral.dados.peso}}
+ <tr>
+   <td style="text-align: right; font-weight: bold;width: 370px;">Peso:</td>
+   <td>{{paciente_info_geral.dados.peso}}kg</td>
+ </tr>
+ {{/if}}
+ {{#if paciente_info_geral.dados.altura}}
+ <tr>
+   <td style="text-align: right; font-weight: bold;width: 370px;">Altura:</td>
+   <td>{{paciente_info_geral.dados.altura}}m</td>
+ </tr>
+ {{/if}}
+ {{#if paciente_info_geral.dados.profissao}}
+ <tr>
+   <td style="text-align: right; font-weight: bold;width: 370px;">Profissão:</td>
+   <td>{{paciente_info_geral.dados.profissao}}</td>
+ </tr>
+ {{/if}}
+ {{#if paciente_info_geral.dados.estado_civil}}
+ <tr>
+   <td style="text-align: right; font-weight: bold;width: 370px;">Profissão:</td>
+   <td>{{paciente_info_geral.dados.estado_civil}}</td>
+ </tr>
+ {{/if}}
+ {{#if paciente_info_geral.dados.endereco}}
+ <tr>
+   <td style="text-align: right; font-weight: bold;width: 370px;">Endereco:</td>
+   <td>{{paciente_info_geral.dados.endereco}}</td>
+ </tr>
+ {{/if}}
+ {{#if paciente_info_geral.dados.email}}
+ <tr>
+   <td style="text-align: right; font-weight: bold;width: 370px;">e-Mail:</td>
+   <td>{{paciente_info_geral.dados.email}}</td>
+ </tr>
+ {{/if}}
+ {{#if paciente_info_geral.dados.telefone}}
+ <tr>
+   <td style="text-align: right; font-weight: bold;width: 370px;">Telefone:</td>
+   <td>{{paciente_info_geral.dados.telefone}}</td>
+ </tr>
+ {{/if}}
+ {{#if paciente_info_geral.dados.indicacao}}
+ <tr>
+   <td style="text-align: right; font-weight: bold;width: 370px;">Indicação:</td>
+   <td>{{paciente_info_geral.dados.indicacao}}</td>
+ </tr>
+ {{/if}}
+ {{#if paciente_info_geral.dados.medico}}
+ <tr>
+   <td style="text-align: right; font-weight: bold;width: 370px;">Médico:</td>
+   <td>{{paciente_info_geral.dados.medico}}</td>
+ </tr>
+ {{/if}}
+ {{#if paciente_info_geral.dados.responsavel}}
+ <tr>
+   <td style="text-align: right; font-weight: bold;width: 370px;">Responsável:</td>
+   <td>{{paciente_info_geral.dados.responsavel}}</td>
+ </tr>
+ {{/if}}
+ {{#if paciente_info_geral.dados.diagnostico}}
+ <tr>
+   <td style="text-align: right; font-weight: bold;width: 370px;">Responsável:</td>
+   <td>{{paciente_info_geral.dados.diagnostico}}</td>
+ </tr>
+ {{/if}} 
+ {{#if paciente_info_geral.dados.qp}}
+ <tr>
+   <td style="text-align: right; font-weight: bold;width: 370px;">QP:</td>
+   <td>{{paciente_info_geral.dados.qp}}</td>
+ </tr>
+ {{/if}}
+ {{#if paciente_info_geral.dados.hda_hpp}}
+ <tr>
+   <td style="text-align: right; font-weight: bold;width: 370px;">HDA/HPP:</td>
+   <td>{{paciente_info_geral.dados.hda_hpp}}</td>
+ </tr>
+ {{/if}}
+ {{#if paciente_info_geral.dados.mobilidade}}
+ <tr>
+   <td style="text-align: right; font-weight: bold;width: 370px;">Mobilidade:</td>
+   <td>{{paciente_info_geral.dados.mobilidade}}</td>
+ </tr>
+ {{/if}}
+ {{#if paciente_info_geral.dados.acp_multidis}}
+ <tr>
+   <td style="text-align: right; font-weight: bold;width: 370px;">Acompanhamento multidisciplinar:</td>
+   <td>{{paciente_info_geral.dados.acp_multidis}}</td>
+ </tr>
+ {{/if}}
+ {{#if paciente_info_geral.dados.medicamentos}}
+ <tr>
+   <td style="text-align: right; font-weight: bold;width: 370px;">Medicamentos:</td>
+   <td>{{paciente_info_geral.dados.medicamentos}}</td>
+ </tr>
+ {{/if}}
+ {{#if paciente_info_geral.dados.tratamentos}}
+ <tr>
+   <td style="text-align: right; font-weight: bold;width: 370px;">Tratamentos:</td>
+   <td>{{paciente_info_geral.dados.tratamentos}}</td>
+ </tr>
+ {{/if}}
+ {{#if paciente_info_geral.dados.atividade_fisica}}
+ <tr>
+   <td style="text-align: right; font-weight: bold;width: 370px;">Atividade física:</td>
+   <td>{{paciente_info_geral.dados.atividade_fisica}}</td>
+ </tr>
+ {{/if}}
+ <tr>
+   <td style="text-align: right; font-weight: bold;width: 370px;">Especialidades:</td>
+   <td>
+    <ul>
+     {{#each paciente_info_geral.dados.especialidades}}
+     <li>{{this}}</li>
+     {{/each}}
+    </ul>
+   </td>
+ </tr>
+ </table>
+
+ {{#if paciente_gineco_nfo.pend_info}}
+ {{else}}
+  <h3>Gineco obstetrícia</h3>
+     {{#each paciente_gineco_nfo.dados}}
+    <h5>Data: {{this.datahora}}</h5>
+    <table>
+        {{#if this.mestruacao_regular}}
+        <tr>
+        <td style="text-align: right; font-weight: bold;width: 370px;">Mestruação regular:</td>
+        <td>{{this.mestruacao_regular}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.menopausa}}
+        <tr>
+        <td style="text-align: right; font-weight: bold;width: 370px;">Menopausa:</td>
+        <td>{{this.menopausa}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.vida_sexual}}
+        <tr>
+        <td style="text-align: right; font-weight: bold;width: 370px;">Vida sexual:</td>
+        <td>{{this.vida_sexual}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.vida_sexual_obs}}
+        <tr>
+        <td style="text-align: right; font-weight: bold;width: 370px;">Vida sexual observações:</td>
+        <td>{{this.vida_sexual_obs}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.metodo_contraceptivo}}
+        <tr>
+        <td style="text-align: right; font-weight: bold;width: 370px;">Método contraceptivo:</td>
+        <td>{{this.metodo_contraceptivo}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.n_gestacoes}}
+        <tr>
+        <td style="text-align: right; font-weight: bold;width: 370px;">Total de gestações:</td>
+        <td>{{this.n_gestacoes}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.n_abortos}}
+        <tr>
+        <td style="text-align: right; font-weight: bold;width: 370px;">Número de abortos:</td>
+        <td>{{this.n_abortos}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.n_partos_naturais}}
+        <tr>
+        <td style="text-align: right; font-weight: bold;width: 370px;">Número de partos naturais:</td>
+        <td>{{this.n_partos_naturais}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.n_cesarianas}}
+        <tr>
+        <td style="text-align: right; font-weight: bold;width: 370px;">Número de cesarianas:</td>
+        <td>{{this.n_cesarianas}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.parto_nfo}}
+        <tr>
+        <td style="text-align: right; font-weight: bold;width: 370px;">Informações sobre a anestesia no parto:</td>
+        <td>{{this.parto_nfo}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.parto_anestesia}}
+        <tr>
+        <td style="text-align: right; font-weight: bold;width: 370px;">Informações sobre a anestesia no parto:</td>
+        <td>{{this.parto_anestesia}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.historia_partos}}
+        <tr>
+        <td style="text-align: right; font-weight: bold;width: 370px;">História dos partos:</td>
+        <td>{{this.historia_partos}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.peso_gestacoes}}
+        <tr>
+        <td style="text-align: right; font-weight: bold;width: 370px;">Peso nas gestações:</td>
+        <td>{{this.peso_gestacoes}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.peso_bebes}}
+        <tr>
+        <td style="text-align: right; font-weight: bold;width: 370px;">Peso dos bebês:</td>
+        <td>{{this.peso_bebes}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.incontinencia}}
+        <tr>
+        <td style="text-align: right; font-weight: bold;width: 370px;">Incontinência:</td>
+        <td>{{this.incontinencia}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.incontinencia_tratamento}}
+        <tr>
+        <td style="text-align: right; font-weight: bold;width: 370px;">Tratamentos para incontinência:</td>
+        <td>{{this.incontinencia_tratamento}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.cirurgias_uroginecologicas}}
+        <tr>
+        <td style="text-align: right; font-weight: bold;width: 370px;">Cirurgias uroginecológicas:</td>
+        <td>{{this.cirurgias_uroginecologicas}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.cirurgias_uroginecologicas_obs}}
+        <tr>
+        <td style="text-align: right; font-weight: bold;width: 370px;">Cirurgias uroginecológicas - observações:</td>
+        <td>{{this.cirurgias_uroginecologicas_obs}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.patologias_ginecologicas}}
+        <tr>
+        <td style="text-align: right; font-weight: bold;width: 370px;">Patologias ginecológicas:</td>
+        <td>{{this.patologias_ginecologicas}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.patologias_ginecologicas_obs}}
+        <tr>
+        <td style="text-align: right; font-weight: bold;width: 370px;">Patologias ginecológicas associadas - observações:</td>
+        <td>{{this.patologias_ginecologicas_obs}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.disfuncoes_sexuais_femininas}}
+        <tr>
+        <td style="text-align: right; font-weight: bold;width: 370px;">Disfunções sexuais:</td>
+        <td>{{this.disfuncoes_sexuais_femininas}}</td>
+        </tr>
+        {{/if}}
+        </tr>
+        {{#if this.disfuncoes_sexuais_femininas_obs}}
+        <tr>
+        <td style="text-align: right; font-weight: bold;width: 370px;">Disfunções sexuais - observações:</td>
+        <td>{{this.disfuncoes_sexuais_femininas_obs}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.fisiodiagnostico}}
+        <tr>
+        <td style="text-align: right; font-weight: bold;width: 370px;"><strong>Fisiodiagnóstico</strong>:</td>
+        <td>{{this.fisiodiagnostico}}</td>
+        </tr>
+        {{/if}}
+    </table>
+    {{/each}}    
+ {{/if}}
+
+ {{#if paciente_disfmic.pend_info}}
+ {{else}}
+  <h3>Disfunções miccionais</h3>
+    {{#each paciente_disfmic.dados}}
+  <h5>Data: {{this.datahora}}</h5>
+  <table>
+    {{#if this.ingesta_de_liquidos}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Ingesta de líquidos:</td>
+      <td>{{this.ingesta_de_liquidos}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.tipo_bebida}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Tipo de bebida:</td>
+      <td>{{this.tipo_bebida}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.controle_urina}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Com que idade adquiriu controle urina:</td>
+      <td>{{this.controle_urina}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.enurese}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Enurese:</td>
+      <td>{{this.enurese}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.enurese_idade}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Idade (enurese):</td>
+      <td>{{this.enurese_idade}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.frq_urinaria_diurna}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Frequência urinária diurna:</td>
+      <td>{{this.frq_urinaria_diurna}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.frq_urinaria_noturna}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Frequência urinária noturna:</td>
+      <td>{{this.frq_urinaria_noturna}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.frq_urinaria_sono}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Urinar à noite interfere no sono:</td>
+      <td>{{this.frq_urinaria_sono}}</td>
+    </tr>    
+    {{/if}}
+    {{#if this.disfunc_micc_sintomas}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Sintomas:</td>
+      <td>{{this.disfunc_micc_sintomas}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.caracteristicas_urina}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Características da urina:</td>
+      <td>{{this.caracteristicas_urina}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.caracteristicas_jato_urina}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Características do jato da urina:</td>
+      <td>{{this.caracteristicas_jato_urina}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.stop_teste}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">'Stop' teste:</td>
+      <td>{{this.stop_teste}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.caracteristicas_perda}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Características da perda:</td>
+      <td>{{this.caracteristicas_perda}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.situacoes_perda}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Situações de perda:</td>
+      <td>{{this.situacoes_perda}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.n_protetores_dia}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Número de protetores usados durante o dia:</td>
+      <td>{{this.n_protetores_dia}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.n_protetores_noite}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Número de protetores usados durante a noite:</td>
+      <td>{{this.n_protetores_noite}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.protetores_carc_uso}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Uso dos protetores:</td>
+      <td>{{this.protetores_carc_uso}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.protetores_tipo}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">A quanto tempo apresenta perda urinária?</td>
+      <td>{{this.protetores_tipo}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.perda_tempo}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">A quanto tempo apresenta perda urinária?</td>
+      <td>{{this.perda_tempo}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.perda_inicio}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Como começou a perda urinária?</td>
+      <td>{{this.perda_inicio}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.perda_evolucao}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Características de evolução da perda urinária?</td>
+      <td>{{this.perda_evolucao}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.tecnica_cirurgica}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Técnica cirurgica:</td>
+      <td>{{this.tecnica_cirurgica}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.tempo_de_sonda}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Tempo de sonda:</td>
+      <td>{{this.tempo_de_sonda}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.perda_outras_nfo}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Outras informações sobre a perda urinária:</td>
+      <td>{{this.perda_outras_nfo}}</td>
+    </tr>    
+    {{/if}}
+    {{#if this.radioterapia}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Radioterapia:</td>
+      <td>{{this.radioterapia}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.disfunc_sexual_masc}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Disfunções sexuais:</td>
+      <td>{{this.disfunc_sexual_masc}}</td>
+    </tr>
+    {{/if}}
+  </table>
+  {{/each}}
+ {{/if}}
+
+ {{#if paciente_disfproc.pend_info}}
+ {{else}}
+  <h3>Disfunções proctológicas</h3>
+    {{#each paciente_disfproc.dados}}
+  <h5>Data:{{this.datahora}}</h5>
+  <table>
+    {{#if this.disfunc_proct}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Disfunções proctológicas:</td>
+      <td>{{this.disfunc_proct}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.inconti_anal}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Incontinência anal:</td>
+      <td>{{this.inconti_anal}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.tipo_de_perda}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Tipo de perda:</td>
+      <td>{{this.tipo_de_perda}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.momento_perda}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Momento da perda:</td>
+      <td>{{this.momento_perda}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.freq_evacuatoria}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Frequência evacuatória:</td>
+      <td>{{this.freq_evacuatoria}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.reflexos}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Reflexos:</td>
+      <td>{{this.reflexos}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.bristol}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Escala de Bristol:</td>
+      <td>{{this.bristol}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.h_evacuacoes}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Horários das evacuações:</td>
+      <td>{{this.h_evacuacoes}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.habito_intestinal}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Mudança de hábito intestinal:</td>
+      <td>{{this.habito_intestinal}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.alimentacao}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Alimentação:</td>
+      <td>{{this.alimentacao}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.tratamentos_ant}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Informações sobre tratamentos anteriores:</td>
+      <td>{{this.tratamentos_ant}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.cirurgias}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Informações sobre cirurgias:</td>
+      <td>{{this.cirurgias}}</td>
+    </tr>
+    {{/if}}
+  </table>
+  {{/each}}
+ {{/if}}
+
+{{#if paciente_ex_fis.pend_info}}
+{{else}}
+  <h3>Exames físicos</h3>
+{{#each paciente_ex_fis.dados}}
+  <h5>Data: {{this.datahora}}</h5>
+  <table>
+    {{#if this.regiao_amdominal}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Região abdominal:</td>
+      <td>{{this.regiao_amdominal}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.regiao_abdominal_obs}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Região abdominal - outras observações:</td>
+      <td>{{this.regiao_abdominal_obs}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.pad_resp}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Padrão respiratório:</td>
+      <td>{{this.pad_resp}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.inspecao_ano_vulv_obs}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Inspeção região ano-vulvar:</td>
+      <td>{{this.inspecao_ano_vulv_obs}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.inspecao_himem}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Inspeção hímem:</td>
+      <td>{{this.inspecao_himem}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.inspecao_labios}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Inspeção grandes e pequenos lábios:</td>
+      <td>{{this.inspecao_labios}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.inspecao_vulva}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Inspeção vulva:</td>
+      <td>{{this.inspecao_vulva}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.inspecao_cicatriz}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Cicatrizes:</td>
+      <td>{{this.inspecao_cicatriz}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.sensibilidade}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Sensibilidade:</td>
+      <td>{{this.sensibilidade}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.sensibilidade_regiao}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Sensibilidade - região:</td>
+      <td>{{this.sensibilidade_regiao}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.sensibilidade_obs}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Sensibilidade - observações:</td>
+      <td>{{this.sensibilidade_obs}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.reflexos_anocut}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Reflexos - ano-cutâneo:</td>
+      <td>{{this.reflexos_anocut}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.reflexos_bol}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Reflexos - bulbocavernoso:</td>
+      <td>{{this.reflexos_bol}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.valsalva}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Valsalva/tosse:</td>
+      <td>{{this.valsalva}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.valsalva_c_tend}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Centro tendíneo:</td>
+      <td>{{this.valsalva_c_tend}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.valsalva_prolap}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Prolapsos – grau:</td>
+      <td>{{this.valsalva_prolap}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.toque}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Toque:</td>
+      <td>{{this.toque}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.tonus_rep}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Tônus de repouso:</td>
+      <td>{{this.tonus_rep}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.stretch_reflexo}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Stretch reflexo:</td>
+      <td>{{this.stretch_reflexo}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.afa_oxford}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">AFA (Oxford):</td>
+      <td>{{this.afa_oxford}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.afa_oxford_power}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Perfect - escala Ortiz:</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Power:</td>
+      <td>{{this.afa_oxford_power}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.afa_oxford_endurance}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Endurance:</td>
+      <td>{{this.afa_oxford_endurance}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.afa_oxford_rep}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Repetição:</td>
+      <td>{{this.afa_oxford_rep}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.afa_oxford_fast}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Fast:</td>
+      <td>{{this.afa_oxford_fast}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.ect}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">ECT:</td>
+      <td>{{this.ect}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.perda_urinaria_obs}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Perda urinária:</td>
+      <td>{{this.perda_urinaria_obs}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.procto}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Procto:</td>
+      <td>{{this.procto}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.for_esfincter_ex12}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Esfincter externo 12:</td>
+      <td>{{this.for_esfincter_ex12}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.for_esfincter_ex3}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Esfincter externo 3:</td>
+      <td>{{this.for_esfincter_ex3}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.for_esfincter_ex6}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Esfincter externo 6:</td>
+      <td>{{this.for_esfincter_ex6}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.for_esfincter_ex9}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Esfincter externo 9:</td>
+      <td>{{this.for_esfincter_ex9}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.for_puboretal}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Segundos de sustentação puboretal:</td>
+      <td>{{this.for_puboretal}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.tonus_repouso_EAI}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Tônus de repouso do EAE:</td>
+      <td>{{this.tonus_repouso_EAI}}</td>
+    </tr>
+    {{/if}}
+    {{#if this.reflexo_reto_anal}}
+    <tr>
+      <td style="text-align: right; font-weight: bold;width: 370px;">Reflexo reto anal:</td>
+      <td>{{this.reflexo_reto_anal}}</td>
+    </tr>
+    {{/if}}
+  </table>
+  {{/each}}
+ {{/if}}
+
+{{#if paciente_ex_compl.pend_info}}
+{{else}}
+  <h3>Exames complementares</h3>
+{{#each paciente_ex_compl.dados}}
+<h5>Data: {{this.datahora}}</h5>
+  <table>
+        {{#if this.psa_data}}
+        <tr>
+          <td style="text-align:right; width: 370px;">PSA - Data:</td>
+          <td>{{this.psa_data}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.psa_total}}
+        <tr>
+          <td style="text-align:right; width: 370px;">PSA - Total:</td>
+          <td>{{this.psa_total}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.psa_livre}}
+        <tr>
+          <td style="text-align:right; width: 370px;">PSA - Livre:</td>
+          <td>{{this.psa_livre}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.peso_prostata}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Peso próstata:</td>
+          <td>{{this.peso_prostata}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.biopsia}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Biópsia:</td>
+          <td>{{this.biopsia}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.colpocitologia_data}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Colpocitologia - data:</td>
+          <td>{{this.colpocitologia_data}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.colpocitologia}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Colpocitologia - notas:</td>
+          <td>{{this.colpocitologia}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.urinocultura_data}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Urinocultura - data:</td>
+          <td>{{this.urinocultura_data}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.urinocultura}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Urinocultura - notas:</td>
+          <td>{{this.urinocultura}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.urodinamica_data}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Urodinâmica - data:</td>
+          <td>{{this.urodinamica_data}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.urodinamica_curv_flux}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Curva de fluxo:</td>
+          <td>{{this.urodinamica_curv_flux}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.urodinamica_ccm}}
+        <tr>
+          <td style="text-align:right; width: 370px;">CCM:</td>
+          <td>{{this.urodinamica_ccm}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.urodinamica_complacencia}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Complacência:</td>
+          <td>{{this.urodinamica_complacencia}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.urodinamica_sensibilidade}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Sensibilidade:</td>
+          <td>{{this.urodinamica_sensibilidade}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.urodinamica_estabilidade}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Estabilidade:</td>
+          <td>{{this.urodinamica_estabilidade}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.urodinamica_mom_perda}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Momento da perda:</td>
+          <td>{{this.urodinamica_mom_perda}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.urodinamica_mom_perda_f}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Momento da perda - fase:</td>
+          <td>{{this.urodinamica_mom_perda_f}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.urodinamica_mom_perda_m}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Momento da perda - motivo:</td>
+          <td>{{this.urodinamica_mom_perda_m}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.urodinamica_press_p}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Pressão de perda:</td>
+          <td>{{this.urodinamica_press_p}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.urodinamica_res_pm}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Resíduo pós-miccional:</td>
+          <td>{{this.urodinamica_res_pm}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.urodinamica_elet_reflex}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Eletromiografia - reflexo guardião:</td>
+          <td>{{this.urodinamica_elet_reflex}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.urodinamica_sinerg_esv}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Eletromiografia - sinergia esvaziamento:</td>
+          <td>{{this.urodinamica_sinerg_esv}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.urodinamica_conclusao}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Urodinâmica - conclusão:</td>
+          <td>{{this.urodinamica_conclusao}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic1_data}}
+        <tr>
+          <td style="text-align:right; width: 370px;"><strong>Diário miccional, 1º dia</strong></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:right; width: 370px;">Reflexos - bulbocavernoso:</td>
+          <td>{{this.diario_mic1_data}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic1_fd}}
+        <tr>
+          <td style="text-align:right; width: 370px;">FD:</td>
+          <td>{{this.diario_mic1_fd}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic1_fn}}
+        <tr>
+          <td style="text-align:right; width: 370px;">FN:</td>
+          <td>{{this.diario_mic1_fn}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic1_ingest_hid}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Ingesta hídrica em 24 horas (ml):</td>
+          <td>{{this.diario_mic1_ingest_hid}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic1_elimin}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Eliminações em 24 horas (ml):</td>
+          <td>{{this.diario_mic1_elimin}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic1_menor}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Menor volume urinado em 24h (ml):</td>
+          <td>{{this.diario_mic1_menor}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic1_maior}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Maior volume urinado em 24h (ml):</td>
+          <td>{{this.diario_mic1_maior}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic1_urgencia}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Grau de urgência:</td>
+          <td>{{this.diario_mic1_urgencia}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic1_s_perda}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Situações de perda:</td>
+          <td>{{this.diario_mic1_s_perda}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic1_t_protetores}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Tipo de protetores:</td>
+          <td>{{this.diario_mic1_t_protetores}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic1_n_protetores}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Número de protetores em 24hs:</td>
+          <td>{{this.diario_mic1_n_protetores}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic1_uri_vont}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Urinou com vontade todas as vezes:</td>
+          <td>{{this.diario_mic1_uri_vont}}</td>
+        </tr>
+        {{/if}}        
+        {{#if this.diario_mic1_rpm}}
+        <tr>
+          <td style="text-align:right; width: 370px;">RPM:</td>
+          <td>{{this.diario_mic1_rpm}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic2_data}}
+        <tr>
+          <td style="text-align:right; width: 370px;"><strong>Diário miccional, 2º dia</strong></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:right; width: 370px;">Reflexos - bulbocavernoso:</td>
+          <td>{{this.diario_mic2_data}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic2_fd}}
+        <tr>
+          <td style="text-align:right; width: 370px;">FD:</td>
+          <td>{{this.diario_mic2_fd}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic2_fn}}
+        <tr>
+          <td style="text-align:right; width: 370px;">FN:</td>
+          <td>{{this.diario_mic2_fn}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic2_ingest_hid}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Ingesta hídrica em 24 horas (ml):</td>
+          <td>{{this.diario_mic2_ingest_hid}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic2_elimin}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Eliminações em 24 horas (ml):</td>
+          <td>{{this.diario_mic2_elimin}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic2_menor}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Menor volume urinado em 24h (ml):</td>
+          <td>{{this.diario_mic2_menor}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic2_maior}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Maior volume urinado em 24h (ml):</td>
+          <td>{{this.diario_mic2_maior}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic2_urgencia}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Grau de urgência:</td>
+          <td>{{this.diario_mic2_urgencia}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic2_s_perda}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Situações de perda:</td>
+          <td>{{this.diario_mic2_s_perda}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic2_t_protetores}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Tipo de protetores:</td>
+          <td>{{this.diario_mic2_t_protetores}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic2_n_protetores}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Número de protetores em 24hs:</td>
+          <td>{{this.diario_mic2_n_protetores}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic2_uri_vont}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Urinou com vontade todas as vezes:</td>
+          <td>{{this.diario_mic2_uri_vont}}</td>
+        </tr>
+        {{/if}}        
+        {{#if this.diario_mic2_rpm}}
+        <tr>
+          <td style="text-align:right; width: 370px;">RPM:</td>
+          <td>{{this.diario_mic2_rpm}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic3_data}}
+        <tr>
+          <td style="text-align:right; width: 370px;"><strong>Diário miccional, 3º dia</strong></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:right; width: 370px;">Reflexos - bulbocavernoso:</td>
+          <td>{{this.diario_mic3_data}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic3_fd}}
+        <tr>
+          <td style="text-align:right; width: 370px;">FD:</td>
+          <td>{{this.diario_mic3_fd}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic3_fn}}
+        <tr>
+          <td style="text-align:right; width: 370px;">FN:</td>
+          <td>{{this.diario_mic3_fn}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic3_ingest_hid}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Ingesta hídrica em 24 horas (ml):</td>
+          <td>{{this.diario_mic3_ingest_hid}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic3_elimin}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Eliminações em 24 horas (ml):</td>
+          <td>{{this.diario_mic3_elimin}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic3_menor}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Menor volume urinado em 24h (ml):</td>
+          <td>{{this.diario_mic3_menor}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic3_maior}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Maior volume urinado em 24h (ml):</td>
+          <td>{{this.diario_mic3_maior}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic3_urgencia}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Grau de urgência:</td>
+          <td>{{this.diario_mic3_urgencia}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic3_s_perda}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Situações de perda:</td>
+          <td>{{this.diario_mic3_s_perda}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic3_t_protetores}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Tipo de protetores:</td>
+          <td>{{this.diario_mic3_t_protetores}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic3_n_protetores}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Número de protetores em 24hs:</td>
+          <td>{{this.diario_mic3_n_protetores}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.diario_mic3_uri_vont}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Urinou com vontade todas as vezes:</td>
+          <td>{{this.diario_mic3_uri_vont}}</td>
+        </tr>
+        {{/if}}        
+        {{#if this.diario_mic3_rpm}}
+        <tr>
+          <td style="text-align:right; width: 370px;">RPM:</td>
+          <td>{{this.diario_mic3_rpm}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.info_complement}}
+        <tr>
+          <td style="text-align:right; width: 370px;"><strong>Informações complementares</strong></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td style="text-align:right; width: 370px;">Observações:</td>
+          <td>{{this.info_complement}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.handcap}}
+        <tr>
+          <td style="text-align:right; width: 370px;">DCAF:</td>
+          <td>{{this.handcap}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.dcaf}}
+        <tr>
+          <td style="text-align:right; width: 370px;">DCAF:</td>
+          <td>{{this.dcaf}}</td>
+        </tr>
+        {{/if}}
+        {{#if this.proposta}}
+        <tr>
+          <td style="text-align:right; width: 370px;">Proposta terapêutica:</td>
+          <td>{{this.proposta}}</td>
+        </tr>
+        {{/if}}
+  </table>
+  {{/each}}
+ {{/if}}
+
+{{#if paciente_info_geral.dados.evolucoes}}
+  <h3>Registro de evoluções</h3>
+{{#each paciente_info_geral.dados.evolucoes}}
+<h5>Data: {{this.datahora}}</h5>
+  <table>
+        {{#if this.evolucao_nfo}}
+        <tr>
+          <td style="text-align:right; width: 80px;">» </td>
+          <td>{{this.evolucao_nfo}}</td>
+        </tr>
+        {{/if}}
+  </table>
+{{/each}}
+{{else}}
+{{/if}}
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+</div> 

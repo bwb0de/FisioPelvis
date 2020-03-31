@@ -1,0 +1,136 @@
+@font-face{
+	font-family: 'Segoe Script';
+	src: url('/fonts/segoesc.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@media only screen and (max-width: 768px) {}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 15px;
+    display: flex;
+}
+
+a{
+    text-decoration:none;
+    color: rgb(41, 32, 165);
+}
+
+label {
+    font-size: 18px;
+}
+
+h2{
+    color: #836bb5;
+}
+
+h3{
+    color: #026068;
+}
+
+h5{
+    color: #00a4a8;
+}
+
+a:hover{
+    color: #5d4b95;
+}
+
+header{
+    background-color: #5d4b95;
+    color: whitesmoke;
+    position: fixed;
+    padding-top: 0px;
+    margin-top: -10px;
+    margin-left: -8px;
+    height: 85px;
+    width: 105%;
+    z-index: 1;
+}
+
+header a:hover{
+    color: gainsboro;
+}
+
+.sub_header {
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    color: white; 
+    position: fixed; 
+    background-color:#836bb5; 
+    width: 103%; 
+    margin-left: -12%; 
+    text-indent:12%; 
+    z-index: 3; 
+    margin-top: -1px;    
+}
+
+div.sub_header a:hover{
+    color: gainsboro;
+}
+
+.header_title_box{
+    position: fixed;
+    margin-left: 10%;
+    height: 85px;
+    vertical-align: -webkit-baseline-middle;
+    
+}
+.header_action_box{
+    margin-top: 38px;
+    margin-right: 13.8%;
+    text-align: right;
+
+    height: 85px;
+    vertical-align: -webkit-baseline-middle;
+    z-index: -1;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;    
+}
+
+.actions {
+    font-size: 16px;
+    text-align: right;
+}
+
+.page_nfo{
+    position: absolute;
+    margin-top: 76px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 89%;
+    font-size: 16px;
+
+}
+.logo_img{
+    vertical-align: -webkit-baseline-middle;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.main_nfo{
+    font-family: 'Segoe Script';
+    font-size: 40px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.sub_nfo{
+    font-family: 'Segoe Script';
+    font-size: 18px;
+    padding-top: 0px;
+    text-align: center;
+}
+
+
+
+
+
